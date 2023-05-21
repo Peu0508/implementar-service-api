@@ -1,0 +1,15 @@
+<main>
+    <section id="section-login">
+    <h2>Login</h2>
+    <form class="row g-3">
+    <label for="id-suario" class="visuallyhidden">Usuário</label>
+    <input name= "usuario" type="text" class="form-control" id="id-usuario"
+    placeholder="email@exemplo.com" [(ngModel)]="usuario">
+    <br>
+    <label for="id-senha" class="visuallyhidden">Senha</label>
+    <input type="password" class="form-control" id="idsenha" placeholder="senha" name="senha" [(ngModel)]="senha">
+    <br>
+    <button (click)="fazerLogin()" type="submit" class="btn btn-primary mb3">Login</button>
+    </form>
+    </section>
+    </main>
